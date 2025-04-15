@@ -1,0 +1,43 @@
+
+# Data files (especially large ones)
+*.pkl
+# data/large_file.csv
+pickled_ten_year_filtered_lead_para.pkl
+*.csv
+
+# Python cache/environments
+__pycache__/
+*.pyc
+*.pyo
+.env
+venv/
+env/
+*.egg-info/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# R environment stuff
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+renv/library/
+renv.lock
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE specific files
+.vscode/
+.idea/
+
+# Secrets / Sensitive info
+credentials.*
+*.secrets
+
+# Reports generated files (e.g. word docs from knitr/quarto)
+*.docx
+*.html
+*.log
