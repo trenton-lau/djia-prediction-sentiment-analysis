@@ -110,7 +110,7 @@ The project is divided into four main stages:
 ## Results Summary
 
 *   **Replication:** Baseline models (RF, LogReg, MLP) established initial performance. MLP performed best among the three baseline replications.
-*   **Window Expansion:** Extending the training data from 8 years (10 months/year) to 9 years (11 months/year) **reduced the Mean Squared Error (MSE)** across all tested models (RF, LogReg, MLP), indicating that more historical data improved predictive accuracy. *(See slide 15 for specific MSE values).*
+*   **Window Expansion:** Extending the training data from 8 years (10 months/year) to 9 years (11 months/year) **reduced the Mean Squared Error (MSE)** across all tested models (RF, LogReg, MLP), indicating that more historical data improved predictive accuracy. *
 *   **NLP Sentiment Analysis:**
     *   Lexicon-based methods (R `sentiment`/bing, Python NLTK/Vader) were used to score news headlines.
     *   Top positive words included `right`, `trump`, `work`, `win`, `top`, `lead`, `like`, `gain`, `support`, `good`.
@@ -120,8 +120,8 @@ The project is divided into four main stages:
 *   **LSTM Modeling:**
     *   Introduced as a better approach due to its ability to learn long-term dependencies and weigh feature importance via back-propagation.
     *   Incorporated Sentiment Score and BIAS indicator as factors.
-    *   Analysis of different BIAS **window sizes** showed `Window Size = 3` achieved the lowest Training and Testing MSE among sizes 1-5 *(based on plot on slide 35, actual lowest MSE values needed)*.
-    *   The model with `Window Size = 2` provided a representative plot of predicted vs actual values. *(Refer to slide 36)*.
+    *   Analysis of different BIAS **window sizes** showed `Window Size = 3` achieved the lowest Training and Testing MSE among sizes 1-5.
+    *   The model with `Window Size = 2` provided a representative plot of predicted vs actual values.
     *   Validation loss curves showed potential under-fitting (large gap, slow convergence), well-fitting, and over-fitting (validation loss increases) depending on training duration/parameters.
 
 ## Conclusion & Discussion
